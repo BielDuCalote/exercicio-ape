@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+	
+	setlocale(LC_ALL,"Portuguese");
+
+	float n1, n2, soma;
+
+	printf("Digite o primeiro valor: ");
+	scanf("%f", &n1);
+	fflush(stdin);
+	
+	printf("Digite o segundo valor: ");
+	scanf("%f", &n2);
+	fflush(stdin);
+	
+	soma=n1+n2;
+	
+	printf("O resultado da soma dos dois valores é: %.2f", soma);
+	
+	return 0;
+}
