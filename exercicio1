@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+	
+	setlocale(LC_ALL,"Portuguese");
+
+	float A, B, C;
+	
+	printf("Digite um valor para a primeira variável: ");
+	scanf("%f", &A);
+	fflush(stdin);
+	
+	printf("Digite um valor para a segunda variável: ");
+	scanf("%f", &B);
+	fflush(stdin);
+	
+	C=A+B;
+	
+	printf("O valor de C é: %.2f", C);
+	
+	return 0;
+}
