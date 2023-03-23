@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+	int main(){
+		
+	setlocale(LC_ALL,"Portuguese");
+		
+	int n1, n2, n3, n4, dif;
+		
+		
+	printf("Digite o primeiro valor: \n");
+	scanf("%d", &n1);
+	
+	printf("Digite o segundo valor: \n");
+	scanf("%d", &n2);
+	
+	printf("Digite o terceiro valor: \n");
+	scanf("%d", &n3);
+	
+	printf("Digite o quarto valor: \n");
+	scanf("%d", &n4);
+	
+	dif= (n1*n2)-(n3*n4);
+	
+	
+	printf("A diferença do primeiro e segundo valor pelo terceiro e quarto é: %d", dif);
+	
+	return 0;
+	}
