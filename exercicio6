@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+	int main(){
+		
+	setlocale(LC_ALL,"Portuguese");
+		
+	float cod1, quant1, valor1, cod2, quant2, valor2, total;		
+			
+	printf("Informe o código da peça: \n");
+	scanf("%f", &cod1);
+	fflush(stdin);
+	
+	printf("Informe a quantidade de peças: \n");
+	scanf("%f", &quant1);
+	fflush(stdin);
+	
+	printf("Informe o valor unitário da peça: \n");
+	scanf("%f", &valor1);
+	fflush(stdin);
+	
+	printf("Informe o código da segunda peça: \n");
+	scanf("%f", &cod2);
+	fflush(stdin);
+	
+	printf("Informe a quantidade de peças: \n");
+	scanf("%f", &quant2);
+	fflush(stdin);
+	
+	printf("Informe o valor unitário da peça: \n");
+	scanf("%f", &valor2);
+	fflush(stdin);
+	
+	total= (valor1*quant1) + (valor2*quant2);
+	
+	printf("Valor a pagar: %.2f", total);
+	
+	return 0;
+	}
