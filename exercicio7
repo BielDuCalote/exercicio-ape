@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+	int main(){
+		
+	setlocale(LC_ALL,"Portuguese");
+		
+	float raio,volume;
+			
+	printf("Calculadora de volume\n");
+	
+	printf("Informe o valor do Raio: \n");
+	scanf("%f", &raio);
+	fflush(stdin);
+	
+	
+	volume= pow(raio, 3) * 4/3 * 3.14159;
+	
+	printf("O volume da esfera é: %.2f", volume);
+	
+	return 0;
+	}
