@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+ 
+	int main(){
+ 
+	setlocale(LC_ALL,"Portuguese");
+ 
+	float A, B, C, tri, cir, trap, quadrado, retangulo;
+ 
+	printf("Informe o valor de A: \n");
+	scanf("%f", &A);
+	fflush(stdin);
+ 
+	printf("Informe o valor de B: \n");
+	scanf("%f", &B);
+	fflush(stdin);
+ 
+	printf("Informe o valor de C: \n");
+	scanf("%f", &C);
+	fflush(stdin);
+ 
+ 
+	tri= A*C/2;
+ 
+	printf("Com base nos valores informados a área do triângulo retângulo é: %.2f \n", tri);
+ 
+ 	cir= pow(C, 3) *3.14159;
+ 
+ 	printf("O valor da área do círculo é: %.3f \n", cir);
+ 
+	trap= (A+B) *C/2;
+	
+	printf("O valor da área do trapézio é: %.2f \n", trap); 
+	
+	quadrado= pow(B, 2);
+	
+	printf("O valor da área do quadrado é: %.2f \n", quadrado);
+ 
+	retangulo= A*B;
+ 
+ 	printf("O valor da área do retângulo é: %.2f \n", retangulo);
+ 
+	return 0;
+	}
